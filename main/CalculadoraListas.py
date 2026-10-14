@@ -98,6 +98,3 @@ def main():
                     print(f"Operación: {num1} / {num2} = {resultado_actual}")
         else:
             print("Opción no válida. Por favor, elige una opción entre 1 y 8.")
-
-if __name__ == "__main__":
-    main()
