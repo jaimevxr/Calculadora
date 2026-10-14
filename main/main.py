@@ -1,5 +1,3 @@
-import Operandos
-
 def mostrar_menu(resultado_actual):
     print("\n=== Calculadora Básica ===")
     if resultado_actual is not None:
@@ -81,16 +79,16 @@ def main():
             guardar_estado()
 
             if opcion == '1':
-                resultado_actual = Operandos.suma(num1, num2)
+                resultado_actual = num1+num2
                 print(f"Operación: {num1} + {num2} = {resultado_actual}")
             elif opcion == '2':
-                resultado_actual = Operandos.resta(num1, num2)
+                resultado_actual = num1-num2
                 print(f"Operación: {num1} - {num2} = {resultado_actual}")
             elif opcion == '3':
-                resultado_actual = Operandos.multiplicar(num1, num2)
+                resultado_actual = num1*num2
                 print(f"Operación: {num1} * {num2} = {resultado_actual}")
             elif opcion == '4':
-                resultado = Operandos.dividir(num1, num2)
+                resultado = num1/num2
                 if isinstance(resultado, str):  # En caso de error por dividir entre cero
                     print(resultado)
                     # Revertimos el guardado en el historial porque falló
