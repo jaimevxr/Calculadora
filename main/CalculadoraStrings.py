@@ -23,9 +23,13 @@ def mostrar_menu(resultado_actual, historial_str):
     else:
         print("[*] Memoria vacía. Se pedirán ambos números.")
     
-    print("1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Salir")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
     print("6. Limpiar (Empezar de nuevo)")
-    print("7. Deshacer (Undo) - Adaptado a strings")
+    print("7. Deshacer (Undo)")
     print("==========================")
 
 def main():
